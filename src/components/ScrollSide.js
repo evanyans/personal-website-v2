@@ -19,7 +19,9 @@ const Wrapper = styled.div`
     width: 44em;
     padding-left:6em;
     padding-right:6em;
-
+    @media (max-width: 1350px){
+        width: auto;
+    }
 `
 
 const Info = styled.div`
@@ -27,6 +29,7 @@ const Info = styled.div`
     font-style: normal;
     font-weight: 500;
     color: ${({theme}) => theme.colors.subtext};
+
 `
 
 const Highlight = styled.mark`

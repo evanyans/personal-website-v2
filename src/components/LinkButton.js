@@ -4,7 +4,7 @@ import { styled } from "styled-components"
 
 export const LinkButton = ({text = "Default", link = "www.google.com", hasLink = true}) => {
     const [copy, setCopy] = useState(false);
-    const [option, setOption] = useState(false);
+    const [option, setOption] = useState(true);
     const [view, setView] = useState(false);
 
     const CopyToClipboard = () => {
@@ -14,7 +14,7 @@ export const LinkButton = ({text = "Default", link = "www.google.com", hasLink =
         setTimeout(() => {
             setOption(true)
             setCopy(false)
-        }, 3000)
+        }, 2000)
     }
 
     if (hasLink) {
@@ -25,7 +25,7 @@ export const LinkButton = ({text = "Default", link = "www.google.com", hasLink =
         )
     } 
     return( 
-        <Button onClick={CopyToClipboard} onMouseEnter={() => setView(true)} onMouseLeave={() => (setView(false))}> 
+        <Button onClick={CopyToClipboard} onMouseEnter={() => (setView(true))} onMouseLeave={() => (setView(false))}> 
             {text}
             {view && copy && <Popupv2>Copied!</Popupv2>}
             {view && option && <Popup>Click to copy</Popup>}
@@ -52,11 +52,12 @@ const Button = styled.a`
 `
 
 const Popup = styled.span`
+    pointer-events: none;
     font-weight:400;
     cursor: default;
     width: 7.5em;
-    background-color: black;
-    color: #fff;
+    background-color: ${({theme}) => theme.colors.text};
+    color: ${({theme}) => theme.colors.background};
     text-align: center;
     border-radius: 0.6em;
     padding: 8px 0;
@@ -73,15 +74,17 @@ const Popup = styled.span`
         margin-left: -25px;
         border-width: 5px;
         border-style: solid;
-        border-color: transparent transparent black transparent;
+        border-color: transparent transparent ${({theme}) => theme.colors.text} transparent;
     }
 `
 const Popupv2 = styled.span`
+    pointer-events: none;
+
     font-weight:400;
     cursor: default;
     width: 5em;
-    background-color: black;
-    color: #fff;
+    background-color: ${({theme}) => theme.colors.text};
+    color: ${({theme}) => theme.colors.background};
     text-align: center;
     border-radius: 0.6em;
     padding: 8px 0;
@@ -98,6 +101,6 @@ const Popupv2 = styled.span`
         margin-left: -5px;
         border-width: 5px;
         border-style: solid;
-        border-color: transparent transparent black transparent;
+        border-color: transparent transparent ${({theme}) => theme.colors.text} transparent;
     }
 `

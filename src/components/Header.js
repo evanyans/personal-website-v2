@@ -11,7 +11,7 @@ export const Header = () => {
                 <Name>Evan Yan</Name>
                 <Position>I'm a <Highlight>computer science</Highlight> and <Highlight>business administration</Highlight> student studying at the University of Waterloo.</Position>
                 <ButtonList>
-                    <LinkButton text={"Email"} link={""}/>
+                    <LinkButton text={"Email"} link={""} hasLink={false}/>
                     <LinkButton text={"GitHub"} link={"https://github.com/evanyans"}/>
                     <LinkButton text={"LinkedIn"} link={"https://www.linkedin.com/in/yanevan/"}/>
                     <LinkButton text={"Resume"} link={"https://github.com/evanyans"}/>
@@ -34,7 +34,12 @@ const Wrapper = styled.div`
     width: 44em;
     padding-left:6em;
     padding-right:6em;
+    margin-bottom:5em;
 
+    @media (max-width: 1350px){
+        width: auto;
+        padding-right:12em;
+    }
 `
 
 const Profile = styled.div`
