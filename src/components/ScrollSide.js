@@ -7,7 +7,7 @@ export const ScrollSide = () => {
             <Wrapper>
                 <Info>
                     I’m a designer and engineer with a strong focus on building <Highlight>intuitive</Highlight> and <Highlight>unique</Highlight> web experiences.<br/><br/>
-                    Currently, I am working on Statuni, a website that crowdsources data from university applicants to display admission statistics across Canada.
+                    Currently, I am working on <HLPurp>Statuni</HLPurp>, a website that crowdsources data from university applicants to display admission statistics across Canada.
                     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 </Info>
             </Wrapper>
@@ -32,4 +32,8 @@ const Info = styled.div`
 const Highlight = styled.mark`
     //background: none;
     //color:${({theme}) => theme.colors.text};
+`
+
+const HLPurp = styled.mark`
+    background: #EA4EA6;
 `

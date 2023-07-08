@@ -2,34 +2,38 @@ import * as React from "react"
 import { styled } from "styled-components"
 import { LinkButton } from "./LinkButton"
 
-export const NavBar = () => {
-    return (
+export const Header = () => {
+    return(
         <>
-         <Wrapper>
+        <Wrapper>
+            <Toggle>
             <Profile>
                 <Name>Evan Yan</Name>
                 <Position>I'm a <Highlight>computer science</Highlight> and <Highlight>business administration</Highlight> student studying at the University of Waterloo.</Position>
                 <ButtonList>
-                    <LinkButton text={"Email"} link={""} hasLink={false}/>
+                    <LinkButton text={"Email"} link={""}/>
                     <LinkButton text={"GitHub"} link={"https://github.com/evanyans"}/>
                     <LinkButton text={"LinkedIn"} link={"https://www.linkedin.com/in/yanevan/"}/>
                     <LinkButton text={"Resume"} link={"https://github.com/evanyans"}/>
                 </ButtonList>  
             </Profile>
+            </Toggle>
          </Wrapper>
         </>
     )
 }
 
+const Toggle = styled.div`
+    display:none;
+    @media (max-width: 1350px){
+        display:inline;
+    }
+`
+
 const Wrapper = styled.div`
-    position: fixed;
-    top: 5rem;
     width: 44em;
     padding-left:6em;
-
-    @media (max-width: 1350px){
-        display:none;
-    }
+    padding-right:6em;
 
 `
 
@@ -37,7 +41,7 @@ const Profile = styled.div`
     display: flex;
     flex-direction:column;
     align-items: flex-start;
-    padding-right:6rem;
+    
 `
 
 const Name = styled.div`

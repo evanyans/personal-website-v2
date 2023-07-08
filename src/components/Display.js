@@ -2,13 +2,15 @@ import * as React from "react"
 import { NavBar } from "./NavBar"
 import { styled } from "styled-components"
 import { ScrollSide } from "./ScrollSide"
+import { Header } from "./Header"
 
 export const Display = () => {
     return(
         <>
             <App>
+             <NavBar/>
                     <Grid>
-                        <NavBar/>
+                        <Header/>
                         <Line/>
                         <ScrollSide/>  
                     </Grid>
@@ -30,6 +32,10 @@ const Grid = styled.div`
     flex-direction:row;
     align-content: center;
     justify-content: center;
+    
+    @media (max-width: 1350px){
+        flex-direction:column;
+    }
 `
 
 const Line = styled.div`
@@ -38,5 +44,8 @@ const Line = styled.div`
     position:fixed;
     left:50%;
     top:-10%;
-    
+
+    @media (max-width: 1350px){
+        display:none;
+    }
 `
