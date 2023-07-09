@@ -1,6 +1,6 @@
 import * as React from "react"
 import { styled } from "styled-components"
-import { LinkButton } from "./LinkButton"
+import { ButtonList } from "./lists/ButtonList"
 
 export const NavBar = () => {
     return (
@@ -9,12 +9,7 @@ export const NavBar = () => {
             <Profile>
                 <Name>Evan Yan</Name>
                 <Position>I'm a <Highlight>computer science</Highlight> and <Highlight>business administration</Highlight> student studying at the University of Waterloo.</Position>
-                <ButtonList>
-                    <LinkButton text={"Email"} link={""} hasLink={false}/>
-                    <LinkButton text={"GitHub"} link={"https://github.com/evanyans"}/>
-                    <LinkButton text={"LinkedIn"} link={"https://www.linkedin.com/in/yanevan/"}/>
-                    <LinkButton text={"Resume"} link={"https://github.com/evanyans"}/>
-                </ButtonList>  
+                <ButtonList/>  
             </Profile>
          </Wrapper>
         </>
@@ -24,8 +19,9 @@ export const NavBar = () => {
 const Wrapper = styled.div`
     position: fixed;
     top: 5rem;
-    width: 44em;
-    padding-left:6em;
+    width: 38em;
+    margin-left:3em;
+    margin-right:3rem;
 
     @media (max-width: 1350px){
         display:none;
@@ -37,7 +33,7 @@ const Profile = styled.div`
     display: flex;
     flex-direction:column;
     align-items: flex-start;
-    padding-right:6rem;
+    
 `
 
 const Name = styled.div`
@@ -57,10 +53,4 @@ const Position = styled.div`
 const Highlight = styled.mark`
      //background: none;
      //color:${({theme}) => theme.colors.text};
-`
-
-const ButtonList = styled.div`
-    display:flex;
-    flex-direction:row;
-    gap:0.8em;
 `

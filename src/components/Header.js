@@ -1,6 +1,6 @@
 import * as React from "react"
 import { styled } from "styled-components"
-import { LinkButton } from "./LinkButton"
+import { ButtonList } from "./lists/ButtonList"
 
 export const Header = () => {
     return(
@@ -10,12 +10,7 @@ export const Header = () => {
             <Profile>
                 <Name>Evan Yan</Name>
                 <Position>I'm a <Highlight>computer science</Highlight> and <Highlight>business administration</Highlight> student studying at the University of Waterloo.</Position>
-                <ButtonList>
-                    <LinkButton text={"Email"} link={""} hasLink={false}/>
-                    <LinkButton text={"GitHub"} link={"https://github.com/evanyans"}/>
-                    <LinkButton text={"LinkedIn"} link={"https://www.linkedin.com/in/yanevan/"}/>
-                    <LinkButton text={"Resume"} link={"https://github.com/evanyans"}/>
-                </ButtonList>  
+                <ButtonList/>
             </Profile>
             </Toggle>
          </Wrapper>
@@ -32,8 +27,8 @@ const Toggle = styled.div`
 
 const Wrapper = styled.div`
     width: 44em;
-    padding-left:6em;
-    padding-right:6em;
+    margin-left:3em;
+    margin-right:3em;
     margin-bottom:5em;
 
     @media (max-width: 1350px){
@@ -66,10 +61,4 @@ const Position = styled.div`
 const Highlight = styled.mark`
      //background: none;
      //color:${({theme}) => theme.colors.text};
-`
-
-const ButtonList = styled.div`
-    display:flex;
-    flex-direction:row;
-    gap:0.8em;
 `

@@ -9,9 +9,10 @@ export const Display = () => {
         <>
             <App>
              <NavBar/>
+             <Line/>
                     <Grid>
                         <Header/>
-                        <Line/>
+                        <Mid/>
                         <ScrollSide/>  
                     </Grid>
             </App>
@@ -20,9 +21,9 @@ export const Display = () => {
 }
 
 const App = styled.div`
-    max-width: 88rem;
+    max-width:87em;
     margin-left: auto;
-    margin-right: auto;
+    margin-right:auto;
     margin-top: 5rem;
 `
 
@@ -30,9 +31,6 @@ const App = styled.div`
 const Grid = styled.div`
     display: flex;
     flex-direction:row;
-    align-content: center;
-    justify-content: center;
-    
     @media (max-width: 1350px){
         flex-direction:column;
     }
@@ -48,4 +46,8 @@ const Line = styled.div`
     @media (max-width: 1350px){
         display:none;
     }
+`
+
+const Mid = styled.div`
+    //border-left: 1px solid white;
 `
