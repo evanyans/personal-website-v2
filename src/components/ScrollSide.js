@@ -1,6 +1,7 @@
 import * as React from "react"
 import { styled } from "styled-components"
 import { ProjectList } from "./lists/ProjectList"
+import { ExpList } from "./lists/ExpList"
 
 export const ScrollSide = () => {
     return(
@@ -11,17 +12,19 @@ export const ScrollSide = () => {
                     Currently, I am working on <HLPurp>Statuni</HLPurp>, a website that crowdsources data from university applicants to display admission statistics across Canada.
                 </Info>
                 <ProjectList />
+                <ExpList/>
             </Wrapper>
         </>
     )
 }
 
 const Wrapper = styled.div`
-    width: 38em;
-    margin-left:3em;
+    width: 38.8em;
+    margin-left:0em;
     margin-right:3em;
     @media (max-width: 1350px){
         width: auto;
+        margin-left:3em;
     }
 `
 

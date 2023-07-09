@@ -3,21 +3,21 @@ import { styled } from "styled-components"
 import yelpcamp from "../../images/yelpcamp.png"
 import { TechList } from "../lists/TechList"
 
-export const ProjectItem = ({tech=["React", "Javascript"], pic=0, link="https://www.google.com", title="Default", desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "}) => {
+export const ExpItem = ({tech=["React", "Javascript"], link="https://www.google.com/", title="Default", desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "}) => {
     const images = [yelpcamp]
     return(
-        <ProjectCard href={link} target="_blank">
-            <Image loading="lazy" src={images[pic]} width="160" height="90"/>
+        <ExpCard href={link} target="_blank">
+            <Year>2019-2023</Year>
             <InfoCard>
                 <Title>{title} ↗</Title>
                 <Desc>{desc}</Desc>
                 <TechList tech={tech}/>
             </InfoCard>
-        </ProjectCard>
+        </ExpCard>
     )
 }
 
-const ProjectCard = styled.a`
+const ExpCard = styled.a`
     cursor:pointer;
     text-decoration:none;
     width:auto;
@@ -55,8 +55,13 @@ const Desc = styled.div`
     margin-bottom: 0.69em;
 `
 
-const Image = styled.img`
+const Year = styled.div`
+    min-width:160px;
+    min-height:90px;
+    color: ${({theme}) => theme.colors.subtext};
+    font-weight:500;
+    font-size:1em;
     margin-right:2em;
     border-radius:0.2em;
-    border: 2px solid ${({theme}) => theme.colors.hoverBorder};
+    border: 2px solid rgba(0, 0, 0, 0);
 `

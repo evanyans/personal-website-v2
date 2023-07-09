@@ -9,6 +9,8 @@ export const themes = {
         background: "white",
         button: "#EDF2F6",
         buttonHover: "#E1E8EE",
+        hoverBackground: "rgba(0, 0, 0, 0.05)",
+        hoverBorder: "rgba(0, 0, 0, 0.1)"
       }
     },
     dark: {
@@ -19,6 +21,8 @@ export const themes = {
         background: "black",
         button: "#1F1F1F",
         buttonHover: "#282828",
+        hoverBackground: "rgba(255, 255, 255, 0.05)",
+        hoverBorder: "rgba(255, 255, 255, 0.05)"
       }
     }
   }
@@ -34,5 +38,7 @@ export const GlobalStyle = createGlobalStyle`
     ::selection {
         background: ${({theme}) => theme.colors.highlight};
     }
+
+    
 `
 
