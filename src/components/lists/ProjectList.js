@@ -1,17 +1,19 @@
 import * as React from "react"
 import { styled } from "styled-components"
 import { ProjectItem } from "../items/ProjectItem"
+import { SubLink } from "../items/SubLink"
 
 export const ProjectList = () => {
 
     return(
+        <Wrapper>
         <Projects>
-            <ProjectItem 
+            {/* <ProjectItem 
                 link="https://www.google.com"
                 tech={["React", "Javascript", "MongoDB", "Express", "Node"]}
                 pic={0} 
                 title="Statuni" 
-                desc="Web application that crowdsources data from university applicants to display admission statistics across Canadian universities."/>
+                desc="Web application that crowdsources data from university applicants to display admission statistics across Canadian universities."/> */}
             <ProjectItem 
                 link="https://github.com/evanyans/yelpcamp"
                 tech={["JavaScript", "MongoDB", "Express", "Node", "Bootstrap"]}
@@ -25,14 +27,20 @@ export const ProjectList = () => {
                 title="Vancouver Charity Games" 
                 desc="Complete front-end build for a non-profit organization that provides esports opportunities while raising money for local causes."/>
         </Projects>
+        <SubLink link="https://github.com/evanyans" text="View GitHub Profile"/>
+        </Wrapper>
+        
     )
 }
+
+const Wrapper = styled.div`
+    margin-bottom:11em;
+`
 
 const Projects = styled.div`
     display:flex;
     flex-direction:column;
     transition: all 2s ease;
-    margin-bottom: 11em;
 
     &:hover > a {
         opacity: 0.6;
@@ -45,4 +53,5 @@ const Projects = styled.div`
         border: 1px solid ${({theme}) => theme.colors.hoverBorder};
         transition: all 0.1s linear;
     }
+
 `
