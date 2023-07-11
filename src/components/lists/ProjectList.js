@@ -30,7 +30,7 @@ export const ProjectList = () => {
                 desc="Personal website built with Gatsby to maximize performance."/>
             <ProjectItem
                 link="https://www.vancouvercharitygames.com/"
-                tech={["React", "TypeScript", "styled-components"]}
+                tech={["React", "TypeScript", "styled-components", "Figma"]}
                 pic={2} 
                 title="Vancouver Charity Games" 
                 desc="Complete front-end build for a non-profit organization that provides esports opportunities while raising money for local causes."/>
@@ -48,7 +48,7 @@ export const ProjectList = () => {
                 desc="Personal website built with Gatsby to maximize performance."/>
             <MobileProjectItem
                 link="https://www.vancouvercharitygames.com/"
-                tech={["React", "TypeScript", "styled-components"]}
+                tech={["React", "TypeScript", "styled-components", "Figma"]}
                 pic={2} 
                 title="Vancouver Charity Games" 
                 desc="Complete front-end build for a non-profit organization that provides esports opportunities while raising money for local causes."/>
