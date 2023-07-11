@@ -10,7 +10,7 @@ export const ScrollSide = () => {
                 <Info>
                     I’m a designer and engineer with a strong focus on building <Highlight>intuitive</Highlight> and <Highlight>unique</Highlight> web experiences.
                     <br/><br/>
-                    Currently, I am exploring different technologies to create useful products. I am developing projects that I am passionate about, using React, Node, Python, and C#.
+                    Currently, I am exploring different technologies to create <HLPurp>useful</HLPurp> products. I am developing projects that I am <HLPurp>passionate</HLPurp> about, using React, Node, Python, and C#.
                     <br/><br/>
                     In my free time, I like building web apps, developing games, and watching Formula 1.
                 </Info>
