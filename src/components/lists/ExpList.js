@@ -21,7 +21,7 @@ export const ExpList = () => {
                 title="Software Developer • FTC Robotics Team" 
                 desc="Collaborated with a multidisciplinary team to design, implement, and test software solutions for robotic control and automation. Two-time provincial champions, and 1 of 2 FTC teams in British Columbia to ever be awarded at the FIRST World Championships in Houston, Texas."/>
             </Exp>
-        <SubLink link="" text="View Full Resume"/>
+        <SubLink link="" text="View Full Resume (in progress)"/>
         </Wrapper>
     )
 }
