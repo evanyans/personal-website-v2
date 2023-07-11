@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `personal-website-v2`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.evanyanx.netlify.app`
   },
   plugins: ["gatsby-plugin-netlify","gatsby-plugin-styled-components", {
     resolve: 'gatsby-plugin-manifest',
