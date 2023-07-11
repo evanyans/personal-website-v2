@@ -22,10 +22,16 @@ export const ProjectList = () => {
                 pic={0} 
                 title="YelpCamp" 
                 desc="A full-stack campground site where users can create and review campgrounds. Final project from “The Web Developer Bootcamp” on Udemy."/>
+            <ProjectItem 
+                link=""
+                tech={["React", "Gatsby", "Netlify", "styled-components", "Figma"]}
+                pic={1} 
+                title="Portfolio Site" 
+                desc="Personal website built with Gatsby to maximize performance."/>
             <ProjectItem
                 link="https://www.vancouvercharitygames.com/"
                 tech={["React", "TypeScript", "styled-components"]}
-                pic={0} 
+                pic={2} 
                 title="Vancouver Charity Games" 
                 desc="Complete front-end build for a non-profit organization that provides esports opportunities while raising money for local causes."/>
             <MobileProjectItem 
@@ -34,10 +40,16 @@ export const ProjectList = () => {
                 pic={0} 
                 title="YelpCamp" 
                 desc="A full-stack campground site where users can create and review campgrounds. Final project from “The Web Developer Bootcamp” on Udemy."/>
+            <MobileProjectItem 
+                link=""
+                tech={["React", "Gatsby", "Netlify", "styled-components", "Figma"]}
+                pic={1} 
+                title="Portfolio Site" 
+                desc="Personal website built with Gatsby to maximize performance."/>
             <MobileProjectItem
                 link="https://www.vancouvercharitygames.com/"
                 tech={["React", "TypeScript", "styled-components"]}
-                pic={0} 
+                pic={2} 
                 title="Vancouver Charity Games" 
                 desc="Complete front-end build for a non-profit organization that provides esports opportunities while raising money for local causes."/>
         </Projects>
