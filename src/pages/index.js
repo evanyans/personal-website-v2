@@ -9,7 +9,10 @@ import { Display } from "../components/Display"
 
 
 const IndexPage = () => {
-  const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)")
+  const isBrowser = typeof window !== "undefined"
+  if(isBrowser){
+     const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+  
   const [theme,setTheme] = useState(darkModeQuery.matches ? "dark" : "light")
 
   useEffect(() => {
@@ -25,6 +28,9 @@ const IndexPage = () => {
       </ThemeProvider>
     </>
   )
+  } else {
+    return null;
+  }
 }
 
 export default IndexPage

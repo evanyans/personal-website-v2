@@ -1,6 +1,6 @@
 import * as React from "react"
 import { styled } from "styled-components"
-import { useState, useEffect } from "react"
+import { useState, useEffect, componentDidMount } from "react"
 
 import { ThemeProvider } from "styled-components"
 import { themes, GlobalStyle } from "../components/globalStyles.js"
@@ -8,14 +8,18 @@ import { themes, GlobalStyle } from "../components/globalStyles.js"
 
 
 const NotFoundPage = () => {
-  const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)")
-  const [theme,setTheme] = useState(darkModeQuery.matches ? "dark" : "light")
+  const isBrowser = typeof window !== "undefined"
+  if(isBrowser){
+     const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)");
   
-  useEffect(() => {
-    darkModeQuery.addEventListener('change', event => {
-      setTheme(event.matches ? "dark" : "light")
-    }) 
-  })
+    const [theme,setTheme] = useState(darkModeQuery.matches ? "dark" : "light")
+    
+    useEffect(() => {
+      darkModeQuery.addEventListener('change', event => {
+        setTheme(event.matches ? "dark" : "light")
+      }) 
+    });
+  
   return (
     <>
       <ThemeProvider theme={themes[theme]}>
@@ -23,7 +27,11 @@ const NotFoundPage = () => {
         <Not>404: This page could not be found.</Not>
       </ThemeProvider>
     </>
+    
   )
+  } else {
+    return null;
+  }
 }
 
 export default NotFoundPage
