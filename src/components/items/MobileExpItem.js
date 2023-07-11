@@ -1,11 +1,9 @@
 import * as React from "react"
 import { styled } from "styled-components"
-import yelpcamp from "../../images/yelpcamp.png"
 import { TechList } from "../lists/TechList"
 import { useState } from "react"
 
 export const MobileExpItem = ({tech=["React", "Javascript"], link="https://www.google.com/", title="Default", desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "}) => {
-    const images = [yelpcamp]
     const [active, setActive] = useState(false)
     return(
         <Wrapper>
