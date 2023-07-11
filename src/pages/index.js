@@ -2,13 +2,14 @@ import * as React from "react"
 import { useState, useEffect } from "react"
 
 import { ThemeProvider } from "styled-components"
-import { themes, GlobalStyle } from "./globalStyles"
+import { themes, GlobalStyle } from "../components/globalStyles.js"
 
 import { Display } from "../components/Display"
 
-const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)")
+
 
 const IndexPage = () => {
+  const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)")
   const [theme,setTheme] = useState(darkModeQuery.matches ? "dark" : "light")
 
   useEffect(() => {

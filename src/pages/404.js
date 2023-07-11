@@ -3,13 +3,14 @@ import { styled } from "styled-components"
 import { useState, useEffect } from "react"
 
 import { ThemeProvider } from "styled-components"
-import { themes, GlobalStyle } from "./globalStyles"
+import { themes, GlobalStyle } from "../components/globalStyles.js"
 
-const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)")
+
 
 const NotFoundPage = () => {
+  const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)")
   const [theme,setTheme] = useState(darkModeQuery.matches ? "dark" : "light")
-
+  
   useEffect(() => {
     darkModeQuery.addEventListener('change', event => {
       setTheme(event.matches ? "dark" : "light")
