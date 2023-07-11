@@ -8,20 +8,22 @@ export const ProjectItem = ({tech=["React", "Javascript"], pic=0, link="https://
     const images = [yelpcamp]
     const [active, setActive] = useState(false)
     return(
-        <ProjectCard href={link} target="_blank" onMouseEnter={() => setActive(true)} onMouseLeave={() => setActive(false)}>
-            <Image loading="lazy" src={images[pic]} width="160" height="90"/>
-            <InfoCard>
-                <Title>{title} <Highlight style={active ? 
-                    {bottom:'3px', left:'3px'} : 
-                    {bottom: '0', left:'0'}}>↗</Highlight></Title>
-                <Desc>{desc}</Desc>
-                <TechList tech={tech}/>
-            </InfoCard>
-        </ProjectCard>
+            <ProjectCard href={link} target="_blank" onMouseEnter={() => setActive(true)} onMouseLeave={() => setActive(false)}>
+                <Image loading="lazy" src={images[pic]} width="160" height="90"/>
+                <InfoCard>
+                    <Obj><Title href={link} target="_blank">{title} <Highlight style={active ? 
+                        {bottom:'3px', left:'3px'} : 
+                        {bottom: '0', left:'0'}}>↗</Highlight></Title></Obj>
+                    <Desc>{desc}</Desc>
+                    <TechList tech={tech}/>
+                </InfoCard>
+            </ProjectCard>
     )
 }
-
 const ProjectCard = styled.a`
+    @media (max-width: 1350px){
+        display:none;
+    }
     cursor:pointer;
     text-decoration:none;
     width:auto;
@@ -36,8 +38,12 @@ const ProjectCard = styled.a`
     margin-bottom:0.75em;
 
     border: 1px solid rgba(255, 255, 255, 0);
+    //background-color:red;
     border-radius: 0.5em;
     transition: all 0.1s linear;
+
+
+
 `
 
 const InfoCard = styled.div`
@@ -45,11 +51,13 @@ const InfoCard = styled.div`
     flex-direction:column;
 `
 
-const Title = styled.div`
+const Title = styled.a`
     font-weight:500;
     font-size:1em;
     margin-bottom:0.69em;
     color: ${({theme}) => theme.colors.text};
+    z-index:1;
+    text-decoration:none;
 `
 
 const Desc = styled.div`
@@ -73,4 +81,8 @@ const Highlight = styled.mark`
     background:none;
     color: ${({theme}) => theme.colors.text};
     transition: all 0.1s ease;
+`
+
+const Obj = styled.object`
+margin-bottom:0.69em;
 `

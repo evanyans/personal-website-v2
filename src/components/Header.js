@@ -33,7 +33,18 @@ const Wrapper = styled.div`
 
     @media (max-width: 1350px){
         width: auto;
-        padding-right:12em;
+        padding-right:0;
+    }
+
+    @media only screen and (max-width: 768px) {
+        margin-left:2em;
+        margin-right:2em;
+        margin-bottom:0;
+    }
+
+    @media only screen and (max-width: 600px) {
+        margin-left:1em;
+        margin-right:1em;
     }
 `
 
@@ -48,6 +59,15 @@ const Name = styled.div`
     font-size: 6em;
     font-weight: 700;
     margin-bottom: 5px;
+
+    @media only screen and (max-width: 768px) {
+        font-size:4em;
+    }
+
+    @media only screen and (max-width: 600px) {
+        font-size:3em;
+    }
+
 `
 
 const Position = styled.div`
@@ -56,6 +76,14 @@ const Position = styled.div`
     line-height:1.3em;
     color: ${({theme}) => theme.colors.subtext};
     margin-bottom:0.5em;
+
+    @media only screen and (max-width: 768px) {
+        font-size:1.5em;
+    }
+
+    @media only screen and (max-width: 600px) {
+        font-size:1.2em;
+    }
 `
 
 const Highlight = styled.mark`

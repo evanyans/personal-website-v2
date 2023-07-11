@@ -16,6 +16,10 @@ const Wrapper = styled.div`
 display:flex;
 flex-direction:row;
 padding-left:2em;
+
+@media (max-width: 1350px){
+    padding-left:0;
+}
 `
 
 const Link = styled.a`

@@ -36,6 +36,7 @@ export const LinkButton = ({text = "Default", link = "www.google.com", hasLink =
 }
 
 const Button = styled.a`
+    transition: all 0.1s linear;
     user-select:none;
     cursor: pointer;
     display:inline-block;
@@ -48,6 +49,14 @@ const Button = styled.a`
     text-decoration: none;
     &:hover {
         background-color: ${({theme}) => theme.colors.buttonHover};
+    }
+
+    @media only screen and (max-width: 768px) {
+        font-size:0.8em;
+    }
+
+    @media only screen and (max-width: 600px) {
+        font-size:0.8em;
     }
 `
 

@@ -6,7 +6,7 @@ import { Navigator } from "./Navigator"
 export const NavBar = () => {
     return (
         <>
-         <Wrapper>
+         <Wrapper >
             <Profile>
                 <Name>Evan Yan</Name>
                 <Position>I'm a <Highlight>computer science</Highlight> and <Highlight>business administration</Highlight> student studying at the University of Waterloo.</Position>

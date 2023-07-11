@@ -2,11 +2,13 @@ import * as React from "react"
 import { styled } from "styled-components"
 import { ProjectItem } from "../items/ProjectItem"
 import { SubLink } from "../items/SubLink"
+import { MobileProjectItem } from "../items/MobileProjectItem"
 
 export const ProjectList = () => {
 
     return(
-        <Wrapper id="projects">
+        <Wrapper data-section id="projects">
+        <Title>PROJECTS</Title>
         <Projects>
             {/* <ProjectItem 
                 link="https://www.google.com"
@@ -20,7 +22,19 @@ export const ProjectList = () => {
                 pic={0} 
                 title="YelpCamp" 
                 desc="A full-stack campground site where users can create and review campgrounds. Final project from “The Web Developer Bootcamp” on Udemy."/>
-            <ProjectItem 
+            <ProjectItem
+                link="https://www.vancouvercharitygames.com/"
+                tech={["React", "TypeScript", "styled-components"]}
+                pic={0} 
+                title="Vancouver Charity Games" 
+                desc="Complete front-end build for a non-profit organization that provides esports opportunities while raising money for local causes."/>
+            <MobileProjectItem 
+                link="https://github.com/evanyans/yelpcamp"
+                tech={["JavaScript", "MongoDB", "Express", "Node", "Bootstrap"]}
+                pic={0} 
+                title="YelpCamp" 
+                desc="A full-stack campground site where users can create and review campgrounds. Final project from “The Web Developer Bootcamp” on Udemy."/>
+            <MobileProjectItem
                 link="https://www.vancouvercharitygames.com/"
                 tech={["React", "TypeScript", "styled-components"]}
                 pic={0} 
@@ -34,9 +48,29 @@ export const ProjectList = () => {
 }
 
 const Wrapper = styled.div`
-    margin-bottom:7em;
+    padding-bottom:7em;
     padding-top:4em;
 
+    @media (max-width: 1350px){
+        padding-bottom:5em;
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding-bottom:4em;
+    }
+
+    @media only screen and (max-width: 600px) {
+        padding-bottom:3em;
+    }
+`
+
+const Title = styled.div`
+    font-weight:700;
+    font-size:0.8em;
+
+    @media (min-width: 1350px){
+        display:none;
+    }
 `
 
 const Projects = styled.div`
@@ -44,16 +78,19 @@ const Projects = styled.div`
     flex-direction:column;
     transition: all 2s ease;
 
-    &:hover > a {
-        opacity: 0.6;
-        transition: all 0.1s linear;
+    @media (min-width: 1350px){
+        &:hover > a {
+            opacity: 0.6;
+            transition: all 0.1s linear;
+        }
+    
+        &:hover > a:hover{
+            opacity: 1.0;
+            background-color: ${({theme}) => theme.colors.hoverBackground};
+            border: 1px solid ${({theme}) => theme.colors.hoverBorder};
+            transition: all 0.1s linear;
+        } 
     }
 
-    &:hover > a:hover{
-        opacity: 1.0;
-        background-color: ${({theme}) => theme.colors.hoverBackground};
-        border: 1px solid ${({theme}) => theme.colors.hoverBorder};
-        transition: all 0.1s linear;
-    }
 
 `

@@ -6,7 +6,7 @@ import { ExpList } from "./lists/ExpList"
 export const ScrollSide = () => {
     return(
         <>
-            <Wrapper>
+            <Wrapper >
                 <Info>
                     I’m a designer and engineer with a strong focus on building <Highlight>intuitive</Highlight> and <Highlight>unique</Highlight> web experiences.<br/><br/>
                     Currently, I am working on <HLPurp>Statuni</HLPurp>, a website that crowdsources data from university applicants to display admission statistics across Canada.
@@ -27,6 +27,16 @@ const Wrapper = styled.div`
         width: auto;
         margin-left:3em;
     }
+
+    @media only screen and (max-width: 768px) {
+        margin-left:2em;
+        margin-right:2em;
+    }
+
+    @media only screen and (max-width: 600px) {
+        margin-left:1em;
+        margin-right:1em;
+    }
 `
 
 const Info = styled.div`
@@ -35,6 +45,15 @@ const Info = styled.div`
     font-weight: 500;
     color: ${({theme}) => theme.colors.subtext};
     margin-bottom:4em;
+
+    @media only screen and (max-width: 768px) {
+        font-size:1.5em;
+        margin-bottom:2em;
+    }
+
+    @media only screen and (max-width: 600px) {
+        font-size:1.3em;
+    }
 
 `
 
@@ -53,6 +72,11 @@ const Credits = styled.div`
     font-weight:400;
     font-size:0.875em;
     color:${({theme}) => theme.colors.subtext};
+
+    @media (max-width: 1350px){
+        padding-left:0;
+        margin-bottom:4em;
+    }
 `
 
 const Bright = styled.a`

@@ -18,4 +18,8 @@ const Buttons = styled.div`
     flex-direction:row;
     gap:0.8em;
     margin-bottom:4.38em;
+    flex-wrap:wrap;
+
+    
 `
+
