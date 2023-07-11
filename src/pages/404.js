@@ -1,49 +1,40 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { styled } from "styled-components"
+import { useState, useEffect } from "react"
 
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+import { ThemeProvider } from "styled-components"
+import { themes, GlobalStyle } from "./globalStyles"
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)")
 
 const NotFoundPage = () => {
+  const [theme,setTheme] = useState(darkModeQuery.matches ? "dark" : "light")
+
+  useEffect(() => {
+    darkModeQuery.addEventListener('change', event => {
+      setTheme(event.matches ? "dark" : "light")
+    }) 
+  })
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
+    <>
+      <ThemeProvider theme={themes[theme]}>
+        <GlobalStyle/>
+        <Not>404: This page could not be found.</Not>
+      </ThemeProvider>
+    </>
   )
 }
 
 export default NotFoundPage
 
 export const Head = () => <title>Not found</title>
+
+const Not = styled.div`
+  font-weight:200;
+  font-size:1.2em;
+  text-align:center;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+`

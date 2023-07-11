@@ -45,7 +45,7 @@ const InfoCard = styled.div`
     flex-direction:column;
 `
 
-const Title = styled.a`
+const Title = styled.div`
     font-weight:500;
     font-size:1em;
     margin-bottom:0.69em;

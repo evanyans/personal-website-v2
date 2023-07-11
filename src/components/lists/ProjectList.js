@@ -6,7 +6,7 @@ import { SubLink } from "../items/SubLink"
 export const ProjectList = () => {
 
     return(
-        <Wrapper>
+        <Wrapper id="projects">
         <Projects>
             {/* <ProjectItem 
                 link="https://www.google.com"
@@ -34,7 +34,9 @@ export const ProjectList = () => {
 }
 
 const Wrapper = styled.div`
-    margin-bottom:11em;
+    margin-bottom:7em;
+    padding-top:4em;
+
 `
 
 const Projects = styled.div`

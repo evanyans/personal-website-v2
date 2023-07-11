@@ -17,4 +17,5 @@ const Buttons = styled.div`
     display:flex;
     flex-direction:row;
     gap:0.8em;
+    margin-bottom:4.38em;
 `

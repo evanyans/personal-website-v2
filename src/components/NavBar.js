@@ -1,6 +1,7 @@
 import * as React from "react"
 import { styled } from "styled-components"
 import { ButtonList } from "./lists/ButtonList"
+import { Navigator } from "./Navigator"
 
 export const NavBar = () => {
     return (
@@ -9,7 +10,8 @@ export const NavBar = () => {
             <Profile>
                 <Name>Evan Yan</Name>
                 <Position>I'm a <Highlight>computer science</Highlight> and <Highlight>business administration</Highlight> student studying at the University of Waterloo.</Position>
-                <ButtonList/>  
+                <ButtonList/> 
+                <Navigator/> 
             </Profile>
          </Wrapper>
         </>

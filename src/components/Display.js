@@ -7,7 +7,7 @@ import { Header } from "./Header"
 export const Display = () => {
     return(
         <>
-            <App>
+            <App id="about">
              <NavBar/>
              <Line/>
                     <Grid>
@@ -24,7 +24,7 @@ const App = styled.div`
     max-width:87em;
     margin-left: auto;
     margin-right:auto;
-    margin-top: 5rem;
+    padding-top: 5rem;
 `
 
 

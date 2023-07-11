@@ -6,7 +6,7 @@ export const TechList = ({tech}) => {
     return(
         <List>
             {tech.map((t) => (
-                <TechButton tech={t}/>
+                <TechButton key={t} tech={t}/>
             ))}
 
         </List>

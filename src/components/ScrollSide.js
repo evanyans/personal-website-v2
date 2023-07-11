@@ -13,6 +13,7 @@ export const ScrollSide = () => {
                 </Info>
                 <ProjectList />
                 <ExpList/>
+                <Credits>Designed in <Bright href="https://figma.com/" target="_blank">Figma</Bright> and built with <Bright href="https://www.gatsbyjs.com/" target="_blank">Gatsby</Bright> by <Bright href="">Evan Yan</Bright>.</Credits>
             </Wrapper>
         </>
     )
@@ -33,7 +34,7 @@ const Info = styled.div`
     font-style: normal;
     font-weight: 500;
     color: ${({theme}) => theme.colors.subtext};
-    margin-bottom:8em;
+    margin-bottom:4em;
 
 `
 
@@ -44,4 +45,19 @@ const Highlight = styled.mark`
 
 const HLPurp = styled.mark`
     background: #EA4EA6;
+`
+
+const Credits = styled.div`
+    padding-left:2em;
+    margin-bottom:8em;
+    font-weight:400;
+    font-size:0.875em;
+    color:${({theme}) => theme.colors.subtext};
+`
+
+const Bright = styled.a`
+    background:none;
+    text-decoration:none;
+    cursor: pointer;
+    color:${({theme}) => theme.colors.text};
 `

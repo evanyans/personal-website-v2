@@ -5,7 +5,7 @@ export const themes = {
       colors: {
         highlight: "#4DF1EF",
         text: "black",
-        subtext: "#A1A1A6",
+        subtext: "#595959",
         background: "white",
         button: "#EDF2F6",
         buttonHover: "#E1E8EE",
@@ -24,12 +24,15 @@ export const themes = {
         buttonHover: "#282828",
         hoverBackground: "rgba(255, 255, 255, 0.05)",
         hoverBorder: "rgba(255, 255, 255, 0.05)",
-        underline: "#FDFC05"
+        underline: "#FDFC05",
       }
     }
   }
 
 export const GlobalStyle = createGlobalStyle`
+    html {
+        scroll-behavior:smooth;
+    }
     body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                     Roboto, Oxygen-Sans, Ubuntu, Cantarell,

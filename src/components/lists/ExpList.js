@@ -6,13 +6,13 @@ import { SubLink } from "../items/SubLink"
 export const ExpList = () => {
 
     return(
-        <Wrapper>
+        <Wrapper id="experience">
         <Exp>
             <ExpItem 
             link={"https://ftc-events.firstinspires.org/team/16031"}
             tech={["Java", "Android SDK", "Python", "TensorFlow"]} 
             title="Software Developer • FTC Robotics Team" 
-            desc="Collaborated with a multidisciplinary team to design, implement, and test software solutions for robotic control and automation. Two-time provincial champions, and 1 of 4 teams in British Columbia to ever be awarded at the FIRST World Championships in Houston, Texas."/>
+            desc="Collaborated with a multidisciplinary team to design, implement, and test software solutions for robotic control and automation. Two-time provincial champions, and 1 of 2 FTC teams in British Columbia to ever be awarded at the FIRST World Championships in Houston, Texas."/>
         </Exp>
         <SubLink link="" text="View Full Resume"/>
         </Wrapper>
@@ -20,7 +20,8 @@ export const ExpList = () => {
 }
 
 const Wrapper = styled.div`
-    margin-bottom:11em;
+    margin-bottom:18em;
+    padding-top:4em;
 `
 
 const Exp = styled.div`
