@@ -8,8 +8,11 @@ export const ScrollSide = () => {
         <>
             <Wrapper >
                 <Info>
-                    I’m a designer and engineer with a strong focus on building <Highlight>intuitive</Highlight> and <Highlight>unique</Highlight> web experiences.<br/><br/>
-                    Currently, I am working on <HLPurp>Statuni</HLPurp>, a website that crowdsources data from university applicants to display admission statistics across Canada.
+                    I’m a designer and engineer with a strong focus on building <Highlight>intuitive</Highlight> and <Highlight>unique</Highlight> web experiences.
+                    <br/><br/>
+                    Currently, I am exploring different technologies to create useful products. I am developing projects that I am passionate about, using React, Node, Python, and C#.
+                    <br/><br/>
+                    In my free time, I like building web apps, developing games, and watching Formula 1.
                 </Info>
                 <ProjectList />
                 <ExpList/>
