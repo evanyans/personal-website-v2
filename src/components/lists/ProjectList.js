@@ -21,7 +21,7 @@ export const ProjectList = () => {
                 tech={["React", "Express", "Spotify API", "Node", "styled-components"]}
                 pic={3} 
                 title="Spotify Uncovered" 
-                desc="Web app for creating playlists based on a your mood and taste using personalized Spotify data. Analyzes audio information from all tracks from your top artists to generate a new playlist based on your specified mood."/>
+                desc="Web app for creating playlists based on your mood and taste using personalized Spotify data. Analyzes audio information from all tracks of your top artists to generate a new playlist based on your specified mood."/>
             <ProjectItem 
                 link="https://github.com/evanyans/yelpcamp"
                 tech={["JavaScript", "MongoDB", "Express", "Node", "Bootstrap"]}
@@ -45,7 +45,7 @@ export const ProjectList = () => {
                 tech={["React", "Express", "Spotify API", "Node", "styled-components"]}
                 pic={3} 
                 title="Spotify Uncovered" 
-                desc="Web app for creating playlists based on a your mood and taste using personalized Spotify data. Analyzes audio information from all tracks from your top artists to generate a new playlist based on your specified mood."/>
+                desc="Web app for creating playlists based on your mood and taste using personalized Spotify data. Analyzes audio information from all tracks of your top artists to generate a new playlist based on your specified mood."/>
             <MobileProjectItem 
                 link="https://github.com/evanyans/yelpcamp"
                 tech={["JavaScript", "MongoDB", "Express", "Node", "Bootstrap"]}
