@@ -8,7 +8,7 @@ export const ButtonList = () => {
             <LinkButton text={"Email"} link={""} hasLink={false}/>
             <LinkButton text={"GitHub"} link={"https://github.com/evanyans"}/>
             <LinkButton text={"LinkedIn"} link={"https://www.linkedin.com/in/yanevan/"}/>
-            <LinkButton text={"Resume"} link={"https://github.com/evanyans"}/>
+            {/* <LinkButton text={"Resume"} link={"https://github.com/evanyans"}/> */}
         </Buttons>
     )
 }
