@@ -3,11 +3,12 @@ import { styled } from "styled-components"
 import yelpcamp from "../../images/yelpcamp.png"
 import site from "../../images/site.png"
 import van from "../../images/van.png"
+import spotify from "../../images/spotify.png"
 import { TechList } from "../lists/TechList"
 import { useState } from "react"
 
 export const ProjectItem = ({tech=["React", "Javascript"], pic=0, link="https://www.google.com", title="Default", desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "}) => {
-    const images = [yelpcamp, site, van]
+    const images = [yelpcamp, site, van, spotify]
     const [active, setActive] = useState(false)
     return(
             <ProjectCard href={link} target="_blank" onMouseEnter={() => setActive(true)} onMouseLeave={() => setActive(false)}>
