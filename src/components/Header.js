@@ -9,7 +9,7 @@ export const Header = () => {
             <Toggle>
             <Profile>
                 <Name>Evan Yan</Name>
-                <Position>I'm a computer science and business administration student studying at the University of Waterloo.</Position>
+                <Position>Computer Science & Business Administration Double Degree @ University of Waterloo</Position>
                 <ButtonList/>
             </Profile>
             </Toggle>

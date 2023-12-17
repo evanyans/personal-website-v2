@@ -43,7 +43,7 @@ const Info = styled.div`
     font-style: normal;
     font-weight: 500;
     color: ${({theme}) => theme.colors.subtext};
-    margin-bottom:4em;
+    margin-bottom:0em;
 
     @media only screen and (max-width: 768px) {
         font-size:1.5em;

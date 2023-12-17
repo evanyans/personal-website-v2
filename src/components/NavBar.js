@@ -9,7 +9,7 @@ export const NavBar = () => {
          <Wrapper >
             <Profile>
                 <Name>Evan Yan</Name>
-                <Position>I'm a <Highlight>computer science</Highlight> and <Highlight>business administration</Highlight> student studying at the University of Waterloo.</Position>
+               <Position>Computer Science & Business Administration Double Degree @ University of Waterloo</Position>
                 <ButtonList/> 
                 <Navigator/> 
             </Profile>
@@ -45,11 +45,12 @@ const Name = styled.div`
 `
 
 const Position = styled.div`
-    font-size: 1.9em;
+    font-size: 1.4em;
     font-weight: 500;
     line-height:1.3em;
     color: ${({theme}) => theme.colors.subtext};
-    margin-bottom:0.5em;
+    margin-bottom:1em;
+    margin-right:5em;
 `
 
 const Highlight = styled.mark`
