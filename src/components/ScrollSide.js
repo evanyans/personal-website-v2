@@ -8,7 +8,7 @@ export const ScrollSide = () => {
         <>
             <Wrapper >
                 <Info>
-                    I’m a designer and engineer with a strong focus on building <Highlight>intuitive</Highlight> and <Highlight>unique</Highlight> web experiences.
+                    I’m a designer and engineer with a strong focus on building intuitive and unique web experiences.
                 </Info>
                 <ProjectList />
                 <ExpList/>
