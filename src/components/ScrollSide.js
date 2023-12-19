@@ -8,7 +8,7 @@ export const ScrollSide = () => {
         <>
             <Wrapper >
                 <Info>
-                    I’m a designer and engineer with a strong focus on building intuitive and unique web experiences.
+                    I’m a <Highlight>designer</Highlight> and <Highlight>engineer </Highlight>with a strong focus on building intuitive and unique web experiences.
                 </Info>
                 <ProjectList />
                 <ExpList/>
@@ -57,8 +57,8 @@ const Info = styled.div`
 `
 
 const Highlight = styled.mark`
-    //background: none;
-    //color:${({theme}) => theme.colors.text};
+    background: none;
+    color:${({theme}) => theme.colors.text};
 `
 
 const HLPurp = styled.mark`

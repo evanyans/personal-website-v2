@@ -39,9 +39,9 @@ export const Navigator = () => {
     return (
         <Wrapper>
             <Nav>
-                <NavLink href="#about" className={activeSection === 'info' ? 'active' : ''} >&gt; about</NavLink>
-                <NavLink href="#projects" className={activeSection === 'projects' ? 'active' : ''}>&gt; projects</NavLink>
-                <NavLink href="#experience" className={activeSection === 'experience' ? 'active' : ''}>&gt; experience</NavLink>
+                <NavLink href="#about" className={activeSection === 'info' ? 'active' : ''} > ▪ about</NavLink>
+                <NavLink href="#projects" className={activeSection === 'projects' ? 'active' : ''}> ▴ projects</NavLink>
+                <NavLink href="#experience" className={activeSection === 'experience' ? 'active' : ''}> • experience</NavLink>
             </Nav>
         </Wrapper>
     )
@@ -53,14 +53,14 @@ const Wrapper = styled.div`
 const Nav = styled.div`
     display:flex;
     flex-direction:column;
-    gap:0.2em;
+    gap:0.3em;
 `
 
 const NavLink = styled.a`
     transition: all 0.1s ease;
     text-decoration:none;
     color:${({theme}) => theme.colors.subtext};
-    font-size:1.25em;
+    font-size:1.2em;
     font-weight:500;
     //padding-left: 1.12em;
     padding-top:0.125em;

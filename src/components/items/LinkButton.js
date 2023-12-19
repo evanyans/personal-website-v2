@@ -43,9 +43,9 @@ const Button = styled.a`
     background-color:${({theme}) => theme.colors.button};
     color: ${({theme}) => theme.colors.text};
     padding: 0.5em 1.18em;
-    font-size:1em;
+    font-size:0.9em;
     border-radius:2em;
-    font-weight:500;
+    font-weight:400;
     text-decoration: none;
     &:hover {
         background-color: ${({theme}) => theme.colors.buttonHover};

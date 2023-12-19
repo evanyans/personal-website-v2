@@ -23,6 +23,12 @@ export const ProjectList = () => {
                 title="Spotify Uncovered" 
                 desc="Web app for creating playlists based on your mood and taste using personalized Spotify data. Analyzes audio information from all tracks of your top artists to generate a new playlist based on your specified mood."/>
             <ProjectItem 
+                link="https://devpost.com/software/papers-please-clone"
+                tech={["Godot Game Engine", "C#", "GDScript"]}
+                pic={4} 
+                title="Credit Crimes" 
+                desc="HackWestern 2023 Finalist (Top 5 Overall) & Best Game Hack: A game blending mystery, intrigue, and tax fraud detection. Analyze documents, scrutinize social media, and make an accurate decision before time runs out!"/>
+            <ProjectItem 
                 link="https://github.com/evanyans/yelpcamp"
                 tech={["JavaScript", "MongoDB", "Express", "Node", "Bootstrap"]}
                 pic={0} 
@@ -46,6 +52,12 @@ export const ProjectList = () => {
                 pic={3} 
                 title="Spotify Uncovered" 
                 desc="Web app for creating playlists based on your mood and taste using personalized Spotify data. Analyzes audio information from all tracks of your top artists to generate a new playlist based on your specified mood."/>
+            <MobileProjectItem 
+                link="https://devpost.com/software/papers-please-clone"
+                tech={["Godot Game Engine", "C#", "GDScript"]}
+                pic={4} 
+                title="Credit Crimes" 
+                desc="HackWestern 2023 Finalist (Top 5 Overall) & Best Game Hack: A game blending mystery, intrigue, and tax fraud detection. Analyze documents, scrutinize social media, and make an accurate decision before time runs out!"/>
             <MobileProjectItem 
                 link="https://github.com/evanyans/yelpcamp"
                 tech={["JavaScript", "MongoDB", "Express", "Node", "Bootstrap"]}

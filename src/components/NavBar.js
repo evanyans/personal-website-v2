@@ -39,14 +39,14 @@ const Profile = styled.div`
 `
 
 const Name = styled.div`
-    font-size: 6em;
+    font-size: 4em;
     font-weight: 700;
     margin-bottom: 5px;
 `
 
 const Position = styled.div`
-    font-size: 1.4em;
-    font-weight: 500;
+    font-size: 1.2em;
+    font-weight: 400;
     line-height:1.3em;
     color: ${({theme}) => theme.colors.subtext};
     margin-bottom:1em;

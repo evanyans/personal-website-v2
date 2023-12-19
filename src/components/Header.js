@@ -56,7 +56,7 @@ const Profile = styled.div`
 `
 
 const Name = styled.div`
-    font-size: 6em;
+    font-size: 4em;
     font-weight: 700;
     margin-bottom: 5px;
 
@@ -71,14 +71,14 @@ const Name = styled.div`
 `
 
 const Position = styled.div`
-    font-size: 1.9em;
-    font-weight: 500;
+    font-size: 1.2em;
+    font-weight: 400;
     line-height:1.3em;
     color: ${({theme}) => theme.colors.subtext};
     margin-bottom:0.5em;
 
     @media only screen and (max-width: 768px) {
-        font-size:1.5em;
+        font-size:1.2em;
     }
 
     @media only screen and (max-width: 600px) {
