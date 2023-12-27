@@ -17,14 +17,20 @@ export const ProjectList = () => {
                 title="Statuni" 
                 desc="Web application that crowdsources data from university applicants to display admission statistics across Canadian universities."/> */}
             <ProjectItem 
-                link="https://spotify-uncovered-3f538144239c.herokuapp.com"
+                link="https://github.com/evanyans/tina"
+                tech={["React", "Python", "Next.js", "Django", "News API", "FinBERT NLP Model", "Tailwind CSS"]}
+                pic={5} 
+                title="Tina" 
+                desc="An investment tool that aggregates and analyzes news headlines to deliver sentiment insights."/>
+            <ProjectItem 
+                link="https://github.com/evanyans/spotify-uncovered"
                 tech={["React", "Express", "Spotify API", "Node", "styled-components"]}
                 pic={3} 
                 title="Spotify Uncovered" 
                 desc="Web app for creating playlists based on your mood and taste using personalized Spotify data. Analyzes audio information from all tracks of your top artists to generate a new playlist based on your specified mood."/>
             <ProjectItem 
                 link="https://devpost.com/software/papers-please-clone"
-                tech={["Godot Game Engine", "C#", "GDScript"]}
+                tech={["Godot Game Engine", "Aseprite", "GDScript", "Audacity"]}
                 pic={4} 
                 title="Credit Crimes" 
                 desc="HackWestern 2023 Finalist (Top 5 Overall) & Best Game Hack: A game blending mystery, intrigue, and tax fraud detection. Analyze documents, scrutinize social media, and make an accurate decision before time runs out!"/>
@@ -40,14 +46,14 @@ export const ProjectList = () => {
                 pic={1} 
                 title="Portfolio Site" 
                 desc="Personal website built with Gatsby to maximize performance."/>
-            <ProjectItem
-                link="https://www.vancharitygames.org/"
-                tech={["React", "TypeScript", "styled-components", "Figma"]}
-                pic={2} 
-                title="Vancouver Charity Games" 
-                desc="Complete front-end build for a non-profit organization that provides esports opportunities while raising money for local causes."/>
             <MobileProjectItem 
-                link="https://spotify-uncovered-3f538144239c.herokuapp.com"
+                link="https://github.com/evanyans/tina"
+                tech={["React", "Python", "Next.js", "Django", "News API", "FinBERT NLP Model", "Tailwind CSS"]}
+                pic={5} 
+                title="Tina" 
+                desc="An investment tool that aggregates and analyzes news headlines to deliver sentiment insights."/>
+            <MobileProjectItem 
+                link="https://github.com/evanyans/spotify-uncovered"
                 tech={["React", "Express", "Spotify API", "Node", "styled-components"]}
                 pic={3} 
                 title="Spotify Uncovered" 
@@ -68,14 +74,8 @@ export const ProjectList = () => {
                 link=""
                 tech={["React", "Gatsby", "Netlify", "styled-components", "Figma"]}
                 pic={1} 
-                title="Portfolio Site" 
+                title="Portfolio Site"
                 desc="Personal website built with Gatsby to maximize performance."/>
-            <MobileProjectItem
-                link="https://www.vancharitygames.org/"
-                tech={["React", "TypeScript", "styled-components", "Figma"]}
-                pic={2} 
-                title="Vancouver Charity Games" 
-                desc="Complete front-end build for a non-profit organization that provides esports opportunities while raising money for local causes."/>
         </Projects>
         <SubLink link="https://github.com/evanyans" text="View GitHub Profile"/>
         </Wrapper>
