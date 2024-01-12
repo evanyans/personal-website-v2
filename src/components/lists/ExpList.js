@@ -14,14 +14,28 @@ export const ExpList = () => {
                 link={"https://ftc-events.firstinspires.org/team/16031"}
                 tech={["Java", "Android SDK", "Python", "TensorFlow"]} 
                 title="Software Developer • FTC Robotics Team" 
-                desc="Collaborated with a multidisciplinary team to design, implement, and test software solutions for robotic control and automation. Two-time provincial champions, and 1 of 2 FTC teams in British Columbia to ever be awarded at the FIRST World Championships in Houston, Texas."/>
+                desc="Collaborated with a multidisciplinary team to design, implement, and test software solutions for robotic control and automation. Two-time provincial champions, and 1 of 2 FTC teams in British Columbia to ever be awarded at the FIRST World Championships in Houston, Texas."
+                year="2019-2023"/>
                 <MobileExpItem
                 link={"https://ftc-events.firstinspires.org/team/16031"}
                 tech={["Java", "Android SDK", "Python", "TensorFlow"]} 
                 title="Software Developer • FTC Robotics Team" 
-                desc="Collaborated with a multidisciplinary team to design, implement, and test software solutions for robotic control and automation. Two-time provincial champions, and 1 of 2 FTC teams in British Columbia to ever be awarded at the FIRST World Championships in Houston, Texas."/>
+                desc="Collaborated with a multidisciplinary team to design, implement, and test software solutions for robotic control and automation. Two-time provincial champions, and 1 of 2 FTC teams in British Columbia to ever be awarded at the FIRST World Championships in Houston, Texas."
+                year="2019-2023"/>
+                <ExpItem 
+                link={"https://www.behance.net/evanyan"}
+                tech={["Figma, Adobe Photoshop"]} 
+                title="UI/UX Designer • Freelance" 
+                desc="Designed landing pages for non-profits and mural art for public schools"
+                year="2021-Present"/>
+                <MobileExpItem 
+                link={"https://www.behance.net/evanyan"}
+                tech={["Figma, Adobe Photoshop"]} 
+                title="UI/UX Designer • Freelance" 
+                desc="Designed landing pages for non-profits and mural art for public schools"
+                year="2021-Present"/>
             </Exp>
-        <SubLink link="" text="View Full Resume (in progress)"/>
+        <SubLink link="" text="View LinkedIn Page"/>
         </Wrapper>
     )
 }

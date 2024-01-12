@@ -3,12 +3,12 @@ import { styled } from "styled-components"
 import { TechList } from "../lists/TechList"
 import { useState } from "react"
 
-export const MobileExpItem = ({tech=["React", "Javascript"], link="https://www.google.com/", title="Default", desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "}) => {
+export const MobileExpItem = ({tech=["React", "Javascript"], link="https://www.google.com/", title="Default", desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ", year="2019-2023"}) => {
     const [active, setActive] = useState(false)
     return(
         <Wrapper>
         <ExpCard onMouseEnter={() => setActive(true)} onMouseLeave={() => setActive(false)}>
-            <Year>2019-2023</Year>
+            <Year>{year}</Year>
             <InfoCard>
                 <Obj><Title href={link}>{title} <Highlight style={active ? 
                     {bottom:'3px', left:'3px'} : 
