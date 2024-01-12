@@ -35,7 +35,7 @@ export const ExpList = () => {
                 desc="Designed landing pages for non-profits and mural art for public schools."
                 year="2021-Present"/>
             </Exp>
-        <SubLink link="" text="View LinkedIn Page"/>
+        <SubLink link="https://www.linkedin.com/in/yanevan/" text="View LinkedIn Page"/>
         </Wrapper>
     )
 }
