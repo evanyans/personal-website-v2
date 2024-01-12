@@ -24,15 +24,15 @@ export const ExpList = () => {
                 year="2019-2023"/>
                 <ExpItem 
                 link={"https://www.behance.net/evanyan"}
-                tech={["Figma, Adobe Photoshop"]} 
+                tech={["Figma", "Adobe Photoshop", "Adobe Illustrator"]} 
                 title="UI/UX Designer • Freelance" 
-                desc="Designed landing pages for non-profits and mural art for public schools"
+                desc="Designed landing pages for non-profits and mural art for public schools."
                 year="2021-Present"/>
                 <MobileExpItem 
                 link={"https://www.behance.net/evanyan"}
-                tech={["Figma, Adobe Photoshop"]} 
+                tech={["Figma", "Adobe Photoshop", "Adobe Illustrator"]} 
                 title="UI/UX Designer • Freelance" 
-                desc="Designed landing pages for non-profits and mural art for public schools"
+                desc="Designed landing pages for non-profits and mural art for public schools."
                 year="2021-Present"/>
             </Exp>
         <SubLink link="" text="View LinkedIn Page"/>
